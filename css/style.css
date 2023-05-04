@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+header {
+  margin-top: 30px;
+  color: black;
+}
+
+hr {
+  border-width: 300px;/* 太さテスト */
+  border-color: green;/* colorテスト */
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+button {
+  margin: 24px 10px;
+}
