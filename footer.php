@@ -1,4 +1,3 @@
-        <br>
         <div class="row">
 
           <div class="col-md-6">
@@ -20,16 +19,18 @@
           </div>
 
         </div> <!-- class="row" -->
-
+        
       </main>
       
       <hr>
       
       <footer>
         <p>※計算結果や確認した情報を元に発生するいかなる問題に対しても、当サイトは一切責任を負いません。<br>
-          ご理解いただいたうえで参考程度にご利用いただきますようお願いいたします。</p>
+        ご理解いただいたうえで参考程度にご利用いただきますようお願いいたします。</p>
+
         <p>Copyright &copy; 2023 Yuta Akamine. All Rights Resarved.</p>
         <!-- <a href="">お問い合わせ・ご要望はこちら</a> -->
+
       </footer>
 
     </div><!-- class container -->

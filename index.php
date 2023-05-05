@@ -12,18 +12,59 @@ include('../carcost/header.php'); //ヘッダーを読み込み
 
           <!-- Laravel用 -->
           <!-- @csrf -->
-          <input name="totalcost" type="text" style="width:60px" placeholder="0" required>
 
-          <select  name="unit1">
+          <!-- 計算式1 -->
+          <input name="totalcost1" type="text" style="width:60px" placeholder="0" required>
+          
+          <select id="select1_1" name="select1_1" onchange="syncSelection1_1()">
             <option value="円">円</option>
             <option value="万円">万円</option>
           </select>
-
+          
           ÷(
-
-          <input name="lifespan" type="text" style="width:40px" placeholder="0" required>
-
-          <select  name="unit2">
+            
+            <input name="unitprice1_1" type="text" style="width:40px" placeholder="0" required>
+            
+            <select  name="unit2">
+              <option value="年">年</option>
+              <option value="ヶ月">ヶ月</option>
+              <option value="枚">枚</option>
+              <option value="個">個</option>
+              <option value="リットル">リットル</option>
+              <option value="m">m</option>
+              <option value="g">g</option>
+            </select>
+            
+            -
+            
+            <!-- 算術演算子は代入不可？ -->
+            <!-- <select  name="unit4">
+              <option value="-">-</option>
+              <option value="+">+</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+            </select> -->
+            
+          <input name="unitprice1_2" type="text" placeholder="任意" style="width:40px">
+          <select  name="unit3">
+            <option value="年">年</option>
+            <option value="ヶ月">ヶ月</option>
+          </select>
+          )=計算結果へ<br>
+        
+          <!-- 計算式2 -->
+          <input name="totalcost2" type="text" style="width:60px" placeholder="0" required>
+          
+          <select id="select1_2" name="select1_2" onchange="syncSelection1_2()">
+            <option value="円">円</option>
+            <option value="万円">万円</option>
+          </select>
+          
+          ÷(
+            
+            <input name="unitprice2_1" type="text" style="width:40px" placeholder="0" required>
+            
+            <select  name="unit2">
             <option value="年">年</option>
             <option value="ヶ月">ヶ月</option>
             <option value="枚">枚</option>
@@ -34,7 +75,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
           </select>
           
           -
-
+          
           <!-- 算術演算子は代入不可？ -->
           <!-- <select  name="unit4">
             <option value="-">-</option>
@@ -42,15 +83,29 @@ include('../carcost/header.php'); //ヘッダーを読み込み
             <option value="*">*</option>
             <option value="/">/</option>
           </select> -->
-
-          <input name="Modelyear" type="text" placeholder="任意" style="width:40px">
+          
+          <input name="unitprice2_2" type="text" placeholder="任意" style="width:40px">
           <select  name="unit3">
             <option value="年">年</option>
             <option value="ヶ月">ヶ月</option>
           </select>
           )=計算結果へ<br>
-          <!-- 総額÷(耐用年数-年式)=1年あたりの購入単価<br> -->
-          
+
+          <!-- 単位を統一する -->
+          <script>
+            function syncSelection1_1() {
+              const select1_1 = document.getElementById("select1_1");
+              const select1_2 = document.getElementById("select1_2");
+              select1_2.value = select1_1.value;
+            }
+
+            function syncSelection1_2() {
+              const select1_1 = document.getElementById("select1_1");
+              const select1_2 = document.getElementById("select1_2");
+              select1_1.value = select1_2.value;
+            }
+          </script>
+
           <!-- エスケープ処理テスト用
           <br>XSSテスト<br>悪意のある攻撃を仕掛けます<br>
           <input name="virus" type="text" style="width:100px"><br> -->
@@ -59,7 +114,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
             <button type="reset">リセット</button>
           </p>
         </form>
-
+        
 <?php
 
 include('../carcost/footer.php'); //フッターを読み込み -->
