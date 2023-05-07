@@ -7,9 +7,9 @@ $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
 $email = filter_input(INPUT_POST, 'email');
 
-$username = htmlspecialchars($username);
-$password = htmlspecialchars($password);
-$email = htmlspecialchars($email);
+$username = h($username);
+$password = h($password);
+$email = h($email);
 
 // 非表示にする処理。$passwordの文字数を取得し、その回数『*』を出力
 $hiddenPassword = str_repeat('*', strlen($password));

@@ -10,7 +10,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
   <label for="password">パスワードを入力してください。</label><br>
   <input name="password" type="password" style="width:200px" id="password" required><br><br>
   <label for="email">メールアドレスを入力してください。</label><br>
-  <input name="email" type="email" style="width:200px" id="email" placeholder="例) touroku@gmail.com" required><br><br>
+  <input name="email" type="email" style="width:200px" id="email" placeholder="例) kosupa@gmail.com" required><br><br>
   <br>
   
   <p>
