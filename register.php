@@ -15,7 +15,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
   
   <p>
     <button type="submit">登録する</button> <!-- <input type="submit">から変更 -->
-    
+    <button type="reset">リセット</button><br>
     <a href="index.php">
       <button type="button">トップページへ</button>
     </a>

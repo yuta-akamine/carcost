@@ -7,7 +7,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
         <p>保険や車代などの比較的大きな出費から<br>
         日用品や食品など様々なコスパの計算ができます。</p>
         <h2>指定した条件の購入単価は？</h2>
-        <p style="color:red">半角数字を入力してください</p>
+        <p style="color:red">カンマをいれず半角数字のみを入力してください</p>
         <form method="post" action="calculation.php">
 
           <!-- Laravel用 -->
