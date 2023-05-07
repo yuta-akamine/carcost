@@ -1,72 +1,66 @@
-<?php
+<?php 
 
 include('../carcost/header.php'); //ヘッダーを読み込み
 require_once('../carcost/functions.php'); //エスケープ処理を読み込み
 
-//formから上の値を取得
-$totalCost1 = filter_input(INPUT_POST, 'totalcost1');
-$unitPrice1_1 = filter_input(INPUT_POST, 'unitprice1_1');
-$unitPrice1_2 = filter_input(INPUT_POST, 'unitprice1_2');
+$username = filter_input(INPUT_POST, 'username');
+$password = filter_input(INPUT_POST, 'password');
+$email = filter_input(INPUT_POST, 'email');
 
-//formから下の値を取得
-$totalCost2 = filter_input(INPUT_POST, 'totalcost2');
-$unitPrice2_1 = filter_input(INPUT_POST, 'unitprice2_1');
-$unitPrice2_2 = filter_input(INPUT_POST, 'unitprice2_2');
+$username = htmlspecialchars($username);
+$password = htmlspecialchars($password);
+$email = htmlspecialchars($email);
 
-$select1_1 = filter_input(INPUT_POST, 'select1_1');
-$unit2 = filter_input(INPUT_POST, 'unit2');
-$unit3 = filter_input(INPUT_POST, 'unit3');
+// 非表示にする処理。$passwordの文字数を取得し、その回数『*』を出力
+$hiddenPassword = str_repeat('*', strlen($password));
 
-// エスケープ処理テスト用
-// $virus = filter_input(INPUT_POST, 'virus');
-// $virus = h($virus);
-// echo $virus;
+echo '<h2>ユーザー登録確認</h2>';
 
-//エスケープ処理
-$totalCost1 = h($totalCost1);
-$unitPrice1_1 = h($unitPrice1_1);
-$unitPrice1_2 = h($unitPrice1_2);
+echo "<p>ユーザー名: $username</p>";
+echo "<p>パスワード: $hiddenPassword</p>";
+echo "<p>メールアドレス: $email</p>";
 
-//比較二つ名
-$totalCost2 = h($totalCost2);
-$unitPrice2_1 = h($unitPrice2_1);
-$unitPrice2_2 = h($unitPrice2_2);
+echo '<input type="button" onclick="history.back()" value="戻る">';
+// echo '<button type="submit" onclick="history.back()">戻る</button>';
+echo '<button type="submit">OK</button>';
 
-$select1_1 = h($select1_1);
-$unit2 = h($unit2);
-$unit3 = h($unit3);
+// if ($username === '') {
+//   echo 'ユーザー名が入力されていません。<br>';
+// } else {
+//   echo "<p>ユーザー名: $username</p>";
+// }
 
-//空入力なら0を代入
-if($unitPrice1_2 == '') {
-  $unitPrice1_2 = 0;
-}
+// if ($password === '') {
+//   echo 'パスワードが入力されていません。<br>';
+// } else {
+//   echo "<p>パスワード: $hiddenPassword</p>";
+// }
 
-//比較二つ目
-if($unitPrice2_2 == '') {
-  $unitPrice2_2 = 0;
-}
+// if ($email === '') {
+//   echo 'メールアドレスが入力されていません。<br>';
+// } else {
+//   echo "<p>メールアドレス: $email</p>";
+// }
 
-//カンマ入り数値と全角数字のtrue判定の対応が必要
-if (is_numeric($totalCost1) AND is_numeric($unitPrice1_1) AND is_numeric($unitPrice1_2) AND is_numeric($totalCost2) AND is_numeric($unitPrice2_1) AND is_numeric($unitPrice2_2)) {
-  echo'1' .$unit2. 'あたりの購入単価は';
-  // echo $unit4;
-  echo $totalCost1/($unitPrice1_1-$unitPrice1_2);
-  echo $select1_1.'です<br>';
+// if($username === '' || $password === '' || $email === '' ) {
 
-  //比較二つ目
-  echo'1' .$unit2. 'あたりの購入単価は';
-  // echo $unit4;
-  echo $totalCost2/($unitPrice2_1-$unitPrice2_2);
-  echo $select1_1.'です<br>';
+//   echo'<form>';
+//   echo'<input type="button" onclick="history.back()" value="戻る">';
+//   // echo'<button type="submit" onclick="history.back()">戻る</button>';
+//   echo'</form>';
+  
+// } else {
+  
+//   echo '<form action="thanks.php" method="post">';
+//   echo '<input name="username" type="hidden" value="'.$username.'">';
+//   echo '<input name="password" type="hidden" value="'.$password.'">';
+//   echo '<input name="email" type="hidden" value="'.$email.'"><br>';
+//   echo '<input type="button" onclick="history.back()" value="戻る">';
+//   // echo '<button type="submit" onclick="history.back()">戻る</button>';
+//   echo '<button type="submit">OK</button>';
+//   echo '</form>';
 
-
-  echo '<button type="submit" onclick="history.back()">戻る</button>';
-
-} else  {
-  echo '半角数字を入力してください。<br>';
-  echo '戻って再度入力を確認してください。<br>';
-  echo '<button type="submit" onclick="history.back()">戻る</button>';
-}
+// }
 
 include('../carcost/footer.php'); //フッターを読み込み
 

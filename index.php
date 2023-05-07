@@ -8,7 +8,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
         日用品や食品など様々なコスパの計算ができます。</p>
         <h2>指定した条件の購入単価は？</h2>
         <p style="color:red">半角数字を入力してください</p>
-        <form method="post" action="check.php">
+        <form method="post" action="calculation.php">
 
           <!-- Laravel用 -->
           <!-- @csrf -->
@@ -114,7 +114,12 @@ include('../carcost/header.php'); //ヘッダーを読み込み
             <button type="reset">リセット</button>
           </p>
         </form>
-        
+
+        <p>検索情報を保存したい方はこちら
+          <a href="register.php">
+            <button type="button" class="btnRegister">ユーザー登録</button>
+          </a>
+        </p>
 <?php
 
 include('../carcost/footer.php'); //フッターを読み込み -->
