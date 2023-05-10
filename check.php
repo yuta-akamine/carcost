@@ -12,7 +12,7 @@ $password = h($password);
 $email = h($email);
 
 // 非表示にする処理。$passwordの文字数を取得し、その回数『*』を出力
-$hiddenPassword = str_repeat('*', strlen($password));
+$hiddenPassword = str_repeat('*', mb_strlen($password));
 
 echo '<h2>ユーザー登録確認</h2>';
 
