@@ -14,7 +14,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
           <!-- @csrf -->
 
           <!-- 計算式1 -->
-          <input name="totalcost1" type="text" style="width:60px" placeholder="0" required>
+          <input name="totalcost1" type="text" style="width:60px" placeholder="0" autofocus required>
           
           <select id="select1_1" name="select1_1" onchange="syncSelection1_1()">
             <option value="円">円</option>

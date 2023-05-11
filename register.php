@@ -6,7 +6,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
 
 <form action="check.php" method="post">
 <label for="username">ユーザー名を入力してください。</label><br>
-  <input name="username" type="text" style="width:200px" id="username" placeholder="例) コスパ 太郎" required><br><br>
+  <input name="username" type="text" style="width:200px" id="username" placeholder="例) コスパ 太郎" autofocus required><br><br>
   <label for="password">パスワードを入力してください。</label><br>
   <input name="password" type="password" style="width:200px" id="password" required><br><br>
   <label for="email">メールアドレスを入力してください。</label><br>

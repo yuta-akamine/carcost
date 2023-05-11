@@ -16,6 +16,7 @@
     <div class ="container">
 
       <header>
+        <!-- <a href="index.php"></a> -->
         <h1>コスパ計算サイト</h1>
       </header>
     
