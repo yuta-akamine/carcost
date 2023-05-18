@@ -16,52 +16,42 @@ $hiddenPassword = str_repeat('*', mb_strlen($password));
 
 echo '<h2>ユーザー登録確認</h2>';
 
-echo "<p>ユーザー名: $username</p>";
-echo "<p>パスワード: $hiddenPassword</p>";
-echo "<p>メールアドレス: $email</p>";
+if ($username === '') {
+  echo 'ユーザー名が入力されていません。<br>';
+} else {
+  echo "<p>ユーザー名: $username</p>";
+}
 
-echo '<input type="button" onclick="history.back()" value="戻る">';
-// echo '<button type="submit" onclick="history.back()">戻る</button>';
-echo '<button type="submit">OK</button>';
+if ($password === '') {
+  echo 'パスワードが入力されていません。<br>';
+} else {
+  echo "<p>パスワード: $hiddenPassword</p>";
+}
 
-// if ($username === '') {
-//   echo 'ユーザー名が入力されていません。<br>';
-// } else {
-//   echo "<p>ユーザー名: $username</p>";
-// }
+if ($email === '') {
+  echo 'メールアドレスが入力されていません。<br>';
+} else {
+  echo "<p>メールアドレス: $email</p>";
+}
 
-// if ($password === '') {
-//   echo 'パスワードが入力されていません。<br>';
-// } else {
-//   echo "<p>パスワード: $hiddenPassword</p>";
-// }
-
-// if ($email === '') {
-//   echo 'メールアドレスが入力されていません。<br>';
-// } else {
-//   echo "<p>メールアドレス: $email</p>";
-// }
-
-// if($username === '' || $password === '' || $email === '' ) {
-
-//   echo'<form>';
-//   echo'<input type="button" onclick="history.back()" value="戻る">';
-//   // echo'<button type="submit" onclick="history.back()">戻る</button>';
-//   echo'</form>';
+if($username === '' || $password === '' || $email === '' ) {
   
-// } else {
+  echo '<form>';
+  echo '<input type="button" onclick="history.back()" value="戻る">';
+  // echo '<button type="submit" onclick="history.back()">戻る</button>';
+  echo '</form>';
   
-//   echo '<form action="thanks.php" method="post">';
-//   echo '<input name="username" type="hidden" value="'.$username.'">';
-//   echo '<input name="password" type="hidden" value="'.$password.'">';
-//   echo '<input name="email" type="hidden" value="'.$email.'"><br>';
-//   echo '<input type="button" onclick="history.back()" value="戻る">';
-//   // echo '<button type="submit" onclick="history.back()">戻る</button>';
-//   echo '<button type="submit">OK</button>';
-//   echo '</form>';
-
-// }
-
-include('../carcost/footer.php'); //フッターを読み込み
-
-?>
+} else {
+  // echo '<input type="button" onclick="history.back()" value="戻る">';
+  echo '<form action="thanks.php" method="POST">';
+  echo '<input name="username" type="hidden" value="'.$username.'">';
+  echo '<input name="password" type="hidden" value="'.$password.'">';
+  echo '<input name="email" type="hidden" value="'.$email.'">';
+  echo '<input type="button" onclick="history.back()" value="戻る">';
+  echo '<button type="submit">OK</button>';
+  echo '</form>';
+  
+  }
+  
+  
+  ?>

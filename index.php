@@ -115,11 +115,6 @@ include('../carcost/header.php'); //ヘッダーを読み込み
           </p>
         </form>
 
-        <p>検索情報を保存したい方はこちら
-          <a href="register.php">
-            <button type="button" class="btnRegister">ユーザー登録</button>
-          </a>
-        </p>
 <?php
 
 include('../carcost/footer.php'); //フッターを読み込み -->

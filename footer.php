@@ -1,4 +1,8 @@
-
+        <p>検索情報を保存したい方はこちら
+          <a href="register.php">
+            <button type="button" class="btnRegister">ユーザー登録</button>
+          </a>
+        </p>
 
         <div class="row">
 
