@@ -23,5 +23,5 @@ echo $email . 'にメールをお送りしましたのでご確認ください�
 ?>
 
 <a href="index.php">
-  <button type="button">トップページへ</button>
+  <button type="button" class="btn btn-outline-dark">トップページへ</button>
 </a>

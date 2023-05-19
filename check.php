@@ -16,6 +16,7 @@ $hiddenPassword = str_repeat('*', mb_strlen($password));
 
 echo '<h2>ユーザー登録確認</h2>';
 
+// スペース入力拒否パターン
 if ($username === '') {
   echo 'ユーザー名が入力されていません。<br>';
 } else {
@@ -47,8 +48,8 @@ if($username === '' || $password === '' || $email === '' ) {
   echo '<input name="username" type="hidden" value="'.$username.'">';
   echo '<input name="password" type="hidden" value="'.$password.'">';
   echo '<input name="email" type="hidden" value="'.$email.'">';
-  echo '<input type="button" onclick="history.back()" value="戻る">';
-  echo '<button type="submit">OK</button>';
+  echo '<input type="button" onclick="history.back()" class="btn btn-outline-dark" value="戻る">';
+  echo '<button type="submit" class="btn btn-outline-dark">OK</button>';
   echo '</form>';
   
   }

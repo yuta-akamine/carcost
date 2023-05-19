@@ -60,12 +60,12 @@ if (is_numeric($totalCost1) AND is_numeric($unitPrice1_1) AND is_numeric($unitPr
   echo $select1_1.'です<br>';
 
 
-  echo '<button type="submit" onclick="history.back()">戻る</button>';
+  echo '<button type="submit" onclick="history.back()" class="btn btn-outline-dark">戻る</button>';
 
 } else  {
   echo '半角数字を入力してください。<br>';
   echo '戻って再度入力を確認してください。<br>';
-  echo '<button type="submit" onclick="history.back()">戻る</button>';
+  echo '<button type="submit" onclick="history.back()" class="btn btn-outline-dark"">戻る</button>';
 }
 
 include('../carcost/footer.php'); //フッターを読み込み

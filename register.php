@@ -10,19 +10,21 @@ include('../carcost/header.php'); //ヘッダーを読み込み
 <!-- Laravel用 -->
 <!-- @csrf -->
 
-<label for="username">ユーザー名を入力してください。</label><br>
+
+<!-- ユーザー名など左寄せが必要 </div>class container -->
+  <label for="username">ユーザー名<span class="badge bg-danger">必須</span></label><br>
   <input name="username" type="text" style="width:200px" id="username" placeholder="例) コスパ 太郎" autofocus required><br><br>
-  <label for="password">パスワードを入力してください。</label><br>
+  <label for="password">パスワード<span class="badge bg-danger">必須</span></label><br>
   <input name="password" type="password" style="width:200px" id="password" required><br><br>
-  <label for="email">メールアドレスを入力してください。</label><br>
+  <label for="email">メールアドレス<span class="badge bg-danger">必須</span></label><br>
   <input name="email" type="email" style="width:200px" id="email" placeholder="例) kosupa@gmail.com" required><br><br>
   <br>
-  
+
   <p>
-    <button type="submit">登録する</button>
-    <button type="reset">リセット</button><br>
+    <button type="submit" class="btn btn-outline-dark">登録する</button>
+    <button type="reset" class="btn btn-outline-dark">リセット</button><br>
     <a href="index.php">
-      <button type="button">トップページへ</button>
+      <button type="button" class="btn btn-outline-dark">トップページへ</button>
     </a>
   </p>
 </form>

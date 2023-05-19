@@ -25,7 +25,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
             
             <input name="unitprice1_1" type="text" style="width:40px" placeholder="0" required>
             
-            <select  name="unit2">
+            <select id="select2_1" name="unit2" onchange="syncSelection2_1()">
               <option value="年">年</option>
               <option value="ヶ月">ヶ月</option>
               <option value="枚">枚</option>
@@ -46,7 +46,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
             </select> -->
             
           <input name="unitprice1_2" type="text" placeholder="任意" style="width:40px">
-          <select  name="unit3">
+          <select id="select3_1" name="unit3" onchange="syncSelection3_1()">
             <option value="年">年</option>
             <option value="ヶ月">ヶ月</option>
           </select>
@@ -64,7 +64,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
             
             <input name="unitprice2_1" type="text" style="width:40px" placeholder="0" required>
             
-            <select  name="unit2">
+            <select id="select2_2" name="unit2" onchange="syncSelection2_2()">
             <option value="年">年</option>
             <option value="ヶ月">ヶ月</option>
             <option value="枚">枚</option>
@@ -85,7 +85,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
           </select> -->
           
           <input name="unitprice2_2" type="text" placeholder="任意" style="width:40px">
-          <select  name="unit3">
+          <select id="select3_2" name="unit3" onchange="syncSelection3_2()">
             <option value="年">年</option>
             <option value="ヶ月">ヶ月</option>
           </select>
@@ -104,14 +104,37 @@ include('../carcost/header.php'); //ヘッダーを読み込み
               const select1_2 = document.getElementById("select1_2");
               select1_1.value = select1_2.value;
             }
+
+            function syncSelection2_1() {
+              const select2_1 = document.getElementById("select2_1");
+              const select2_2 = document.getElementById("select2_2");
+              select2_2.value = select2_1.value;
+            }
+
+            function syncSelection2_2() {
+              const select2_1 = document.getElementById("select2_1");
+              const select2_2 = document.getElementById("select2_2");
+              select2_1.value = select2_2.value;
+            }
+            function syncSelection3_1() {
+              const select3_1 = document.getElementById("select3_1");
+              const select3_2 = document.getElementById("select3_2");
+              select3_2.value = select3_1.value;
+            }
+
+            function syncSelection3_2() {
+              const select3_1 = document.getElementById("select3_1");
+              const select3_2 = document.getElementById("select3_2");
+              select3_1.value = select3_2.value;
+            }
           </script>
 
           <!-- エスケープ処理テスト用
           <br>XSSテスト<br>悪意のある攻撃を仕掛けます<br>
           <input name="virus" type="text" style="width:100px"><br> -->
           <p>
-            <button type="submit">計算する</button> <!-- <input type="submit">から変更 -->
-            <button type="reset">リセット</button>
+            <button type="submit" class="btn btn-outline-dark">計算する</button> <!-- <input type="submit">から変更 -->
+            <button type="reset" class="btn btn-outline-dark">リセット</button>
           </p>
         </form>
 
