@@ -23,6 +23,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
   <p>
     <button type="submit" class="btn btn-outline-dark">登録する</button>
     <button type="reset" class="btn btn-outline-dark">リセット</button><br>
+    <p class="space"><br></p>
     <a href="index.php">
       <button type="button" class="btn btn-outline-dark">トップページへ</button>
     </a>

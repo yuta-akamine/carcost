@@ -11,9 +11,10 @@ $username = h($username);
 $password = h($password);
 $email = h($email);
 
-echo $username . '様' .'<br>';
-echo 'パスワード受け取りテスト：' . $password .'<br>';
-echo 'メールアドレス受け取りテスト:' . $email .'<br>';
+// データ受け取りテスト用
+// echo $username . '様' .'<br>';
+// echo 'パスワード受け取りテスト：' . $password .'<br>';
+// echo 'メールアドレス受け取りテスト:' . $email .'<br>';
 
 ?>
 <h2>ありがとうございます。ユーザー登録が無事完了しました。</h2>

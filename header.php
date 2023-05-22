@@ -21,5 +21,6 @@
       </header>
     
       <hr>
+      <div class="wrapper">
 
-      <main>
+        <main>

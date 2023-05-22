@@ -1,33 +1,36 @@
-        <p>検索情報を保存したい方はこちら
-          <a href="register.php">
-            <button type="button" class="btn btn-outline-dark">ユーザー登録</button>
-          </a>
-        </p>
+          <p class="space"><br></p>
+          <p>検索情報を保存したい方はこちら
+            <a href="register.php">
+              <button type="button" class="btn btn-outline-dark">ユーザー登録</button>
+            </a>
+          </p>
+          <p class="space"><br></p>
+          <div class="row">
 
-        <div class="row">
+            <div class="col-md-6">
 
-          <div class="col-md-6">
+              <p>車選びの方はこちらから</p>
+              <a href="https://ok.goo-net.com">グーネット沖縄<br></a>
+              <a href="https://www.o-cross.net/">クロスロード<br></a>
+              <a href="https://www.carsensor.net/usedcar/okinawa/">カーセンサー<br></a>
 
-            <p>車選びの方はこちらから</p>
-            <a href="https://ok.goo-net.com">グーネット沖縄<br></a>
-            <a href="https://www.o-cross.net/">クロスロード<br></a>
-            <a href="https://www.carsensor.net/usedcar/okinawa/">カーセンサー<br></a>
+            </div>
+            
+            <div class="col-md-6">
 
-          </div>
+              <p>日用品の購入はこちらから</p>
+              <a href="https://www.rakuten.co.jp/">楽天市場<br></a>
+              <a href="https://www.amazon.co.jp/">Amazon<br></a>
+              <a href="https://www.monotaro.com/">モノタロウ<br></a>
+
+            </div>
+
+          </div> <!-- class="row" -->
           
-          <div class="col-md-6">
+        </main>
 
-            <p>日用品の購入はこちらから</p>
-            <a href="https://www.rakuten.co.jp/">楽天市場<br></a>
-            <a href="https://www.amazon.co.jp/">Amazon<br></a>
-            <a href="https://www.monotaro.com/">モノタロウ<br></a>
+      </div> <!-- class="wrapper" -->
 
-          </div>
-
-        </div> <!-- class="row" -->
-        
-      </main>
-      
       <hr>
       
       <footer>
