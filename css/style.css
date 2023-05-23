@@ -22,9 +22,7 @@ header {
 }
 
 hr {
-  border-width: 300px;/* 太さテスト */
-  border-color: green;/* colorテスト */
-  margin: 20px 0;
+  border-width: 3px;
 }
 
 h1 {
@@ -43,6 +41,17 @@ label {
   margin: 0;
 }
 
+/* img {
+  width: 40px;
+  height: 40px;
+  float: left;
+} */
+
 .space {
-  margin-top: 30px
-  }
+  margin-top: 30px;
+}
+
+.btn-outline-dark {
+  margin-right: 10px;
+  margin-left: 10px;
+}

@@ -16,7 +16,9 @@
     <div class ="container">
 
       <header>
-        <!-- <a href="index.php"></a> -->
+        <!-- <a href="index.php">
+          <img src="images/dentaku.png" alt="">
+        </a> -->
         <h1>コスパ計算サイト</h1>
       </header>
     

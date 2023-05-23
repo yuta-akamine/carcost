@@ -1,5 +1,4 @@
-          <p class="space"><br></p>
-          <p>検索情報を保存したい方はこちら
+          <p class="space">検索情報を保存したい方はこちら
             <a href="register.php">
               <button type="button" class="btn btn-outline-dark">ユーザー登録</button>
             </a>

@@ -22,7 +22,7 @@ $email = h($email);
 <?php 
 echo $email . 'にメールをお送りしましたのでご確認ください。<br>';
 ?>
-
+<p class="space"><br></p>
 <a href="index.php">
   <button type="button" class="btn btn-outline-dark">トップページへ</button>
 </a>

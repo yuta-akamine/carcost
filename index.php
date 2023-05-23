@@ -94,7 +94,6 @@ include('../carcost/header.php'); //ヘッダーを読み込み
               <option value="k">k</option>
             </select>
             )=計算結果へ
-            <p class="space"><br></p>
 
             <!-- 単位を統一する -->
             <script>
@@ -137,7 +136,8 @@ include('../carcost/header.php'); //ヘッダーを読み込み
             <!-- エスケープ処理テスト用
             <br>XSSテスト<br>悪意のある攻撃を仕掛けます<br>
             <input name="virus" type="text" style="width:100px"><br> -->
-            <p>
+
+            <p class="space">
               <button type="submit" class="btn btn-outline-dark">計算する</button> <!-- <input type="submit">から変更 -->
               <button type="reset" class="btn btn-outline-dark">リセット</button>
             </p>
