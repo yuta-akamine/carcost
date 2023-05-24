@@ -11,7 +11,7 @@ include('../carcost/header.php'); //ヘッダーを読み込み
 <!-- @csrf -->
 
 
-<!-- ユーザー名など左寄せが必要 </div>class container -->
+  <!-- ユーザー名など左寄せが必要 </div>class container -->
   <label for="username">ユーザー名<span class="badge bg-danger">必須</span></label><br>
   <input name="username" type="text" style="width:250px" id="username" placeholder="例) コスパ 太郎" autofocus required ><br>
   <label for="password">パスワード<span class="badge bg-danger">必須</span></label><br>
