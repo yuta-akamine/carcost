@@ -2,7 +2,6 @@
 
 include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
 require_once(dirname ( __FILE__ ) . '/functions.php'); //エスケープ処理を読み込み
-// require_once('../carcost/functions.php'); //エスケープ処理を読み込み
 
 //formから上の値を取得
 $totalCost1 = filter_input(INPUT_POST, 'totalcost1');

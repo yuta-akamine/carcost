@@ -1,7 +1,8 @@
 <?php 
 
 include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
-require_once('../carcost/functions.php'); //エスケープ処理を読み込み
+require_once(dirname ( __FILE__ ) . '/functions.php'); //エスケープ処理を読み込み
+// require_once('../carcost/functions.php'); //エスケープ処理を読み込み
 
 $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
