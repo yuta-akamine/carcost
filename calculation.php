@@ -50,7 +50,7 @@ if($unitPrice2_2 == '') {
 
 //カンマ入り数値と全角数字のtrue判定の対応が必要
 if (is_numeric($totalCost1) AND is_numeric($unitPrice1_1) AND is_numeric($unitPrice1_2) AND is_numeric($totalCost2) AND is_numeric($unitPrice2_1) AND is_numeric($unitPrice2_2)) {
-  echo'1' .$unit2. 'あたりの購入単価は';
+  echo '1' .$unit2. 'あたりの購入単価は';
   // echo $unit4;
   echo $totalCost1/($unitPrice1_1-$unitPrice1_2);
   echo $select1_1.'です<br>';
