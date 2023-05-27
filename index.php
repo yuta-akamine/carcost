@@ -1,8 +1,7 @@
 <?php
 
-echo 'php動作チェック';
 // require(__DIR__.'/vendor/autoload.php'); 
-include(dirname ( __FILE__ ) .'/header.php'); //ヘッダーを読み込み
+include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
 
 ?>
 
@@ -147,4 +146,4 @@ include(dirname ( __FILE__ ) .'/header.php'); //ヘッダーを読み込み
 
 <?php
 
-include('../carcost/footer.php'); //フッターを読み込み -->
+include(dirname ( __FILE__ ) . '/footer.php'); //フッターを読み込み -->
