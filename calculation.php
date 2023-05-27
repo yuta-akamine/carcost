@@ -23,11 +23,12 @@ $unit3 = filter_input(INPUT_POST, 'unit3');
 // echo $virus;
 
 //エスケープ処理
+//比較対象1
 $totalCost1 = h($totalCost1);
 $unitPrice1_1 = h($unitPrice1_1);
 $unitPrice1_2 = h($unitPrice1_2);
 
-//比較二つ名
+//比較対象2
 $totalCost2 = h($totalCost2);
 $unitPrice2_1 = h($unitPrice2_1);
 $unitPrice2_2 = h($unitPrice2_2);
@@ -37,11 +38,12 @@ $unit2 = h($unit2);
 $unit3 = h($unit3);
 
 //空入力なら0を代入
+//比較対象1
 if($unitPrice1_2 == '') {
   $unitPrice1_2 = 0;
 }
 
-//比較二つ目
+//比較対象2
 if($unitPrice2_2 == '') {
   $unitPrice2_2 = 0;
 }
