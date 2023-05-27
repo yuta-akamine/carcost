@@ -1,7 +1,8 @@
 <?php
 
-include(dirname ( __FILE__ ) .'/header.php'); //ヘッダーを読み込み
-require_once('../carcost/functions.php'); //エスケープ処理を読み込み
+include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
+require_once(dirname ( __FILE__ ) . '/functions.php'); //エスケープ処理を読み込み
+// require_once('../carcost/functions.php'); //エスケープ処理を読み込み
 
 //formから上の値を取得
 $totalCost1 = filter_input(INPUT_POST, 'totalcost1');
@@ -68,6 +69,6 @@ if (is_numeric($totalCost1) AND is_numeric($unitPrice1_1) AND is_numeric($unitPr
   echo '<button type="submit" onclick="history.back()" class="btn btn-outline-dark space">戻る</button>';
 }
 
-include('../carcost/footer.php'); //フッターを読み込み
+include(dirname ( __FILE__ ) . '/footer.php'); //フッターを読み込み -->
 
 ?>
