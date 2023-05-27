@@ -1,6 +1,6 @@
 <?php
 
-include('../carcost/header.php'); //ヘッダーを読み込み
+include(dirname ( __FILE__ ) .'/header.php'); //ヘッダーを読み込み
 
 ?>
 
