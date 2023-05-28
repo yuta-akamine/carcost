@@ -12,13 +12,10 @@ $username = h($username);
 $password = h($password);
 $email = h($email);
 
-echo 'エスケープ処理後、パスワード表示*への変更前<br>';
-echo $username . '<br>';
-echo $password . '<br>';
-echo $email . '<br>';
-
 // 非表示にする処理。$passwordの文字数を取得し、その回数『*』を出力
 $hiddenPassword = str_repeat('*', strlen($password));
+
+// ローカル環境ではOK。Herokuでデプロイ後以上のため、変更
 // $hiddenPassword = str_repeat('*', mb_strlen($password));
 
 echo 'パスワード非表示後<br>';
