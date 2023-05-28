@@ -20,7 +20,7 @@ $hiddenPassword = str_repeat('*', strlen($password));
 
 echo '<h2>ユーザー登録確認</h2>';
 
-// スペース入力拒否パターン
+// スペース入力拒否条件分岐必要
 if ($username === '') {
   echo 'ユーザー名が入力されていません。<br>';
 } else {
