@@ -18,11 +18,6 @@ $hiddenPassword = str_repeat('*', strlen($password));
 // ローカル環境ではOK。Herokuでデプロイ後以上のため、変更
 // $hiddenPassword = str_repeat('*', mb_strlen($password));
 
-echo 'パスワード非表示後<br>';
-echo $username . '<br>';
-echo $password . '<br>';
-echo $email . '<br>';
-
 echo '<h2>ユーザー登録確認</h2>';
 
 // スペース入力拒否パターン
