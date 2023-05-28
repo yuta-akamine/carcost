@@ -23,21 +23,18 @@ echo '<h2>ユーザー登録確認</h2>';
 // スペース入力拒否条件分岐必要
 if ($username === '' || $username === ' ') {
   echo 'ユーザー名が入力されていません。<br>';
-  echo '戻って再度入力を確認してください。<br>';
 }
 
 if ($password === '') {
   echo 'パスワードが入力されていません。<br>';
-  echo '戻って再度入力を確認してください。<br>';
 }
 
 if ($email === '') {
   echo 'メールアドレスが入力されていません。<br>';
-  echo '戻って再度入力を確認してください。<br>';
 }
 
 if($username === '' || $username === ' ' || $password === '' || $email === '' ) {
-  
+  echo '戻って再度入力を確認してください。<br>';
   echo '<form>';
   echo '<input type="button" onclick="history.back()" class="btn btn-outline-dark space" value="戻る">';
   // echo '<button type="submit" onclick="history.back()">戻る</button>';
