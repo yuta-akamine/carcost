@@ -21,33 +21,33 @@ $hiddenPassword = str_repeat('*', strlen($password));
 echo '<h2>ユーザー登録確認</h2>';
 
 // スペース入力拒否条件分岐必要
-if ($username === '') {
+if ($username === '' || $username === ' ') {
   echo 'ユーザー名が入力されていません。<br>';
-} else {
-  echo "<p>ユーザー名: $username</p>";
+  echo '戻って再度入力を確認してください。<br>';
 }
 
 if ($password === '') {
   echo 'パスワードが入力されていません。<br>';
-} else {
-  echo "<p>パスワード: $hiddenPassword</p>";
+  echo '戻って再度入力を確認してください。<br>';
 }
 
 if ($email === '') {
   echo 'メールアドレスが入力されていません。<br>';
-} else {
-  echo "<p>メールアドレス: $email</p>";
+  echo '戻って再度入力を確認してください。<br>';
 }
 
-if($username === '' || $password === '' || $email === '' ) {
+if($username === '' || $username === ' ' || $password === '' || $email === '' ) {
   
   echo '<form>';
-  echo '<input type="button" onclick="history.back()" value="戻る">';
+  echo '<input type="button" onclick="history.back()" class="btn btn-outline-dark space" value="戻る">';
   // echo '<button type="submit" onclick="history.back()">戻る</button>';
   echo '</form>';
   
 } else {
 
+  echo "<p>ユーザー名: $username</p>";
+  echo "<p>パスワード: $hiddenPassword</p>";
+  echo "<p>メールアドレス: $email</p>";
   echo '<form action="thanks.php" method="POST">';
   echo '<input name="username" type="hidden" value="'.$username.'">';
   echo '<input name="password" type="hidden" value="'.$password.'">';
