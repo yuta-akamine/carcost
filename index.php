@@ -1,6 +1,6 @@
 <?php
 
-// require(__DIR__.'/vendor/autoload.php'); 
+// require_once(__DIR__.'/vendor/autoload.php'); 
 include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
 
 ?>

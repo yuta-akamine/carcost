@@ -15,7 +15,7 @@ $email = h($email);
 // 非表示にする処理。$passwordの文字数を取得し、その回数『*』を出力
 $hiddenPassword = str_repeat('*', strlen($password));
 
-// ローカル環境ではOK。Herokuでデプロイ後以上のため、変更
+// ローカル環境ではOK。Herokuでデプロイ後、異常ありのため、変更
 // $hiddenPassword = str_repeat('*', mb_strlen($password));
 
 echo '<h2>ユーザー登録確認</h2>';
@@ -47,7 +47,7 @@ if($username === '' || $password === '' || $email === '' ) {
   echo '</form>';
   
 } else {
-  // echo '<input type="button" onclick="history.back()" value="戻る">';
+
   echo '<form action="thanks.php" method="POST">';
   echo '<input name="username" type="hidden" value="'.$username.'">';
   echo '<input name="password" type="hidden" value="'.$password.'">';
@@ -57,6 +57,5 @@ if($username === '' || $password === '' || $email === '' ) {
   echo '</form>';
   
   }
-  
   
 ?>
