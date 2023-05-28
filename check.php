@@ -1,10 +1,10 @@
 <?php 
 
-echo '<h2>ユーザー登録確認</h2>';
-
 include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
+echo '<h2>require読み込み前</h2>';
 require_once(dirname ( __FILE__ ) . '/functions.php'); //エスケープ処理を読み込み
 // require_once('../carcost/functions.php'); //エスケープ処理を読み込み
+echo '<h2>require読み込み後</h2>';
 
 $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
