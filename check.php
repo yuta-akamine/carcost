@@ -1,7 +1,6 @@
 <?php 
 
 include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
-echo '<h2>require読み込み前</h2>';
 require_once(dirname ( __FILE__ ) . '/functions.php'); //エスケープ処理を読み込み
 // require_once('../carcost/functions.php'); //エスケープ処理を読み込み
 echo '<h2>require読み込み後</h2>';
@@ -10,12 +9,27 @@ $username = filter_input(INPUT_POST, 'username');
 $password = filter_input(INPUT_POST, 'password');
 $email = filter_input(INPUT_POST, 'email');
 
+echo 'filter_input受け取り後、エスケープ処理前<br>';
+echo $username . '<br>';
+echo $password . '<br>';
+echo $email . '<br>';
+
 $username = h($username);
 $password = h($password);
 $email = h($email);
 
+echo 'エスケープ処理後、パスワード表示*への変更前<br>';
+echo $username . '<br>';
+echo $password . '<br>';
+echo $email . '<br>';
+
 // 非表示にする処理。$passwordの文字数を取得し、その回数『*』を出力
 $hiddenPassword = str_repeat('*', mb_strlen($password));
+
+echo 'パスワード非表示後<br>';
+echo $username . '<br>';
+echo $password . '<br>';
+echo $email . '<br>';
 
 echo '<h2>ユーザー登録確認</h2>';
 

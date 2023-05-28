@@ -6,10 +6,9 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
 
 <h2>ユーザー登録</h2>
 
-<form action="check.php" method="POST">
+<form method="POST" action="check.php">
 <!-- Laravel用 -->
 <!-- @csrf -->
-
 
   <!-- ユーザー名など左寄せが必要 </div>class container -->
   <label for="username">ユーザー名<span class="badge bg-danger">必須</span></label><br>
