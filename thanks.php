@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
 require_once(dirname ( __FILE__ ) . '/functions.php'); //エスケープ処理を読み込み
@@ -19,7 +19,7 @@ $email = h($email);
 ?>
 
 
-<?php 
+<?php
 
 echo '<h2>ただいま障害発生により正常に登録を完了することができませんでした。</h2>';
 echo '<p>ご迷惑をおかけして大変申し訳ございません。<br>復旧までしばらくお待ちください。<br></p>';

@@ -50,6 +50,23 @@ if($unitPrice2_2 == '') {
 
 //カンマ入り数値と全角数字のtrue判定の対応が必要
 if (is_numeric($totalCost1) AND is_numeric($unitPrice1_1) AND is_numeric($unitPrice1_2) AND is_numeric($totalCost2) AND is_numeric($unitPrice2_1) AND is_numeric($unitPrice2_2)) {
+
+  // チェック中
+  // 計算結果の値を代入する
+  // $calculationResult1 = $totalCost1/($unitPrice1_1-$unitPrice1_2);
+  // $calculationResult2 = $totalCost2/($unitPrice2_1-$unitPrice2_2);
+
+  // コスパが良い方の結果を表示する
+  // if ($calculationResult1 < $calculationResult2) {
+  //   echo "<h2>商品1のコスパが優れています。</h2>";
+  // }
+  // if ($calculationResult1 > $calculationResult2) {
+  //   echo "<h2>商品2のコスパが優れています。</h2>";
+  // }
+  // if ($calculationResult1 = $calculationResult2) {
+  //   echo "<h2>商品1と商品2のコスパに差はありません。</h2>";
+  // }
+
   echo '1' .$unit2. 'あたりの購入単価は';
   // echo $unit4;
   echo $totalCost1/($unitPrice1_1-$unitPrice1_2);

@@ -15,6 +15,7 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
             <!-- @csrf -->
 
             <!-- 計算式1 -->
+            商品1:
             <input name="totalcost1" type="text" style="width:60px" placeholder="0" autofocus required>
             
             <select id="select1_1" name="select1_1" onchange="syncSelection1_1()">
@@ -56,6 +57,7 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
             )=計算結果へ<br>
           
             <!-- 計算式2 -->
+            商品2:
             <input name="totalcost2" type="text" style="width:60px" placeholder="0" required>
             
             <select id="select1_2" name="select1_2" onchange="syncSelection1_2()">
