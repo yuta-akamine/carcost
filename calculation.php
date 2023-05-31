@@ -53,27 +53,29 @@ if (is_numeric($totalCost1) AND is_numeric($unitPrice1_1) AND is_numeric($unitPr
 
   // チェック中
   // 計算結果の値を代入する
-  // $calculationResult1 = $totalCost1/($unitPrice1_1-$unitPrice1_2);
-  // $calculationResult2 = $totalCost2/($unitPrice2_1-$unitPrice2_2);
+  // const RESULT1 = $totalCost1/($unitPrice1_1-$unitPrice1_2);
+  // const RESULT2 = $totalCost2/($unitPrice2_1-$unitPrice2_2);
+
+  // 出力テスト
+  // echo RESULT1;
+  // echo RESULT2;
 
   // コスパが良い方の結果を表示する
-  // if ($calculationResult1 < $calculationResult2) {
-  //   echo "<h2>商品1のコスパが優れています。</h2>";
-  // }
-  // if ($calculationResult1 > $calculationResult2) {
-  //   echo "<h2>商品2のコスパが優れています。</h2>";
-  // }
-  // if ($calculationResult1 = $calculationResult2) {
+  // if (RESULT1 < RESULT2) {
+  //   echo "<h2>商品1がお得です!!</h2>";
+  // } elseif (RESULT1 > RESULT2) {
+  //   echo "<h2>商品2がお得です!!</h2>";
+  // } elseif (RESULT1 = RESULT2) {
   //   echo "<h2>商品1と商品2のコスパに差はありません。</h2>";
   // }
 
-  echo '1' .$unit2. 'あたりの購入単価は';
+  echo '商品1: 1' .$unit2. 'あたりの購入単価は';
   // echo $unit4;
   echo $totalCost1/($unitPrice1_1-$unitPrice1_2);
   echo $select1_1.'です<br>';
 
   //比較二つ目
-  echo'1' .$unit2. 'あたりの購入単価は';
+  echo '商品2: 1' .$unit2. 'あたりの購入単価は';
   // echo $unit4;
   echo $totalCost2/($unitPrice2_1-$unitPrice2_2);
   echo $select1_1.'です<br>';
