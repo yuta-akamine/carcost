@@ -37,7 +37,6 @@ if($username === '' || $username === ' ' || $password === '' || $email === '' ) 
   echo '戻って再度入力を確認してください。<br>';
   echo '<form>';
   echo '<input type="button" onclick="history.back()" class="btn btn-outline-dark space" value="戻る">';
-  // echo '<button type="submit" onclick="history.back()">戻る</button>';
   echo '</form>';
   
 } else {
