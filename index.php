@@ -13,7 +13,7 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
   <!-- Laravel用 -->
   <!-- @csrf -->
 
-  <!-- 計算式1 -->
+  <!-- 商品1の計算式 -->
   商品1:
   <input name="totalcost1" type="text" style="width:60px" placeholder="0" autofocus required>
   
@@ -55,7 +55,7 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
   </select>
   )=計算結果へ<br>
 
-  <!-- 計算式2 -->
+  <!-- 商品2の計算式 -->
   商品2:
   <input name="totalcost2" type="text" style="width:60px" placeholder="0" required>
   
@@ -97,7 +97,7 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
   </select>
   )=計算結果へ
 
-  <!-- 単位を統一する -->
+  <!-- 商品1と商品2の単位を統一 -->
   <script>
     function syncSelection1_1() {
       const select1_1 = document.getElementById("select1_1");
