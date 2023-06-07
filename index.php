@@ -8,6 +8,7 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
 日用品や食品など様々なコスパの計算ができます。</p>
 <h2>指定した条件の購入単価は？</h2>
 <p style="color:red">カンマをいれず半角数字のみを入力してください</p>
+
 <form method="POST" action="calculation.php">
 
   <!-- Laravel用 -->
