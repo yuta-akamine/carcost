@@ -19,6 +19,7 @@ $unit2 = filter_input(INPUT_POST, 'unit2');
 $unit3 = filter_input(INPUT_POST, 'unit3');
 
 // エスケープ処理テスト用
+// <script>alert("XSS");</script>
 // $virus = filter_input(INPUT_POST, 'virus');
 // $virus = h($virus);
 // echo $virus;
