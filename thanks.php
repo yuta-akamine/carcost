@@ -55,7 +55,7 @@ try {
 
 
 ?>
-<p class="space"></p>
+<p class="topspace"></p>
 <a href="index.php">
   <button type="button" class="btn btn-outline-dark">トップページへ</button>
 </a>

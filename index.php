@@ -140,7 +140,7 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
   <br>XSSテスト<br>悪意のある攻撃を仕掛けます<br>
   <input name="virus" type="text" style="width:100px"><br> -->
 
-  <p class="space">
+  <p class="topspace">
     <button type="submit" class="btn btn-outline-dark">計算する</button> <!-- <input type="submit">から変更 -->
     <button type="reset" class="btn btn-outline-dark">リセット</button>
   </p>

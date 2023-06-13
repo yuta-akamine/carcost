@@ -40,7 +40,7 @@ if ($email === '') {
 if($username === '' || $username === ' ' || $password === '' || $email === '' ) {
   echo '戻って再度入力を確認してください。<br>';
   echo '<form>';
-  echo '<input type="button" onclick="history.back()" class="btn btn-outline-dark space" value="戻る">';
+  echo '<input type="button" onclick="history.back()" class="btn btn-outline-dark topspace" value="戻る">';
   echo '</form>';
   
 } else {

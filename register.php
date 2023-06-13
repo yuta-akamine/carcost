@@ -22,11 +22,11 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
 
   <p>
 
-    <button type="submit" class="btn btn-outline-dark space">登録する</button>
-    <button type="reset" class="btn btn-outline-dark space">リセット</button><br>
+    <button type="submit" class="btn btn-outline-dark topspace">登録する</button>
+    <button type="reset" class="btn btn-outline-dark topspace">リセット</button><br>
 
     <a href="index.php">
-      <button type="button" class="btn btn-outline-dark space">トップページへ</button>
+      <button type="button" class="btn btn-outline-dark topspace">トップページへ</button>
     </a>
 
   </p>

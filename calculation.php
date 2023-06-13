@@ -89,13 +89,13 @@ if (is_numeric($totalCost1) AND is_numeric($unitPrice1_1) AND is_numeric($unitPr
   // echo $totalCost2/($unitPrice2_1-$unitPrice2_2);
   echo RESULT2;
   echo $select1_1 . 'です<br>';
-  echo '<button type="submit" onclick="history.back()" class="btn btn-outline-dark space">戻る</button>';
+  echo '<button type="submit" onclick="history.back()" class="btn btn-outline-dark topspace">戻る</button>';
 
   //入力値が数値じゃない場合の処理
 } else  {
   echo '半角数字を入力してください。<br>';
   echo '戻って再度入力を確認してください。<br>';
-  echo '<button type="submit" onclick="history.back()" class="btn btn-outline-dark space">戻る</button>';
+  echo '<button type="submit" onclick="history.back()" class="btn btn-outline-dark topspace">戻る</button>';
 }
 
 include(dirname ( __FILE__ ) . '/footer.php'); //フッターを読み込み -->
