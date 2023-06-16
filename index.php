@@ -9,12 +9,61 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
 <h2>指定した条件の購入単価は？</h2>
 <p style="color:red">カンマをいれず半角数字のみを入力してください</p>
 
+<!-- アプリの使い方説明 -->
+<!-- <div class="row">
+
+  <div class="col-md-2">
+  </div>
+
+  <div class="col-md-8">
+
+    <details>
+      <summary>
+        このサイトの使い方の例を見る
+      </summary>
+      <p class="textleft">(例)中古車を購入したいが製造後15年を超えたら買い替えを検討したい。<br>
+      100万円の車で3年落ちの車を12年後に買い替えする場合と<br>
+      80万円で5年落ちの車を10年後に買い替えした場合どちらがお得？</p>
+      <details>
+        <summary>
+          商品1の入力手順
+        </summary>
+        <p class="bottomspace textleft">
+          1.左の枠へ100を入力し単位は万円を選択する<br>
+          2.真ん中の枠へ15を入力し年を選択する<br>
+          3.右側の枠へ3を入力し年を選択する<br>
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          商品2の入力手順
+        </summary>
+        <p class="textleft">
+          1.左の枠へ80を入力し単位は万円を選択する<br>
+          2.真ん中の枠へ15を入力し年を選択する<br>
+          3.右側の枠へ5を入力し年を選択する<br>
+          4.計算ボタンをクリックすると結果が表示されます。
+        </p>
+      </details>
+
+    </details>
+
+  </div>
+
+  <div class="col-md-2">
+  </div>
+
+</div>  <div class="row"> -->
+
+
 <form method="POST" action="calculation.php">
 
   <!-- Laravel用 -->
   <!-- @csrf -->
 
   <!-- 商品1の計算式 -->
+  <p class="topspace">
   商品1:
   <input name="totalcost1" type="text" style="width:60px" placeholder="0" autofocus required>
   
@@ -55,6 +104,7 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
     <option value="k">k</option>
   </select>
   )=計算結果へ<br>
+  </p>
 
   <!-- 商品2の計算式 -->
   商品2:
@@ -146,22 +196,6 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
   </p>
   
 </form>
-
-<!-- アプリの使い方説明 -->
-<!-- トグルリストにする？
-<h3>サイトの使い方を見る</h3>
-<p>(例)中古車を購入したいが製造後15年を超えたら買い替えを検討したい。</p>
-<p>100万円の車で3年落ちの車を12年後に買い替えする場合と</p>
-<p>80万円で5年落ちの車を10年後に買い替えした場合どちらがお得？</p>
-<p>商品1の左の枠へ100を入力し単位は万円を選択する</p>
-<p>商品1の真ん中の枠へ15を入力し年を選択する</p>
-<p>商品1の右側の枠へ3を入力し年を選択する</p>
-<p>商品2の左の枠へ80を入力し単位は万円を選択する</p>
-<p>商品2の真ん中の枠へ15を入力し年を選択する</p>
-<p>商品2の右側の枠へ5を入力し年を選択する</p>
-<p>計算ボタンをクリックすると結果が表示されます。</p> -->
-
-
 
 <?php
 
