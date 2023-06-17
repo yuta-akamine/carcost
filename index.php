@@ -4,57 +4,61 @@ include(dirname ( __FILE__ ) . '/header.php'); //ヘッダーを読み込み
 
 ?>
 
-<p>保険や車代などの比較的大きな出費から<br>
-日用品や食品など様々なコスパの計算ができます。</p>
-<h2>指定した条件の購入単価は？</h2>
-<p style="color:red">カンマをいれず半角数字のみを入力してください</p>
+<div class="row">
 
-<!-- アプリの使い方説明 -->
-<!-- <div class="row">
-
-  <div class="col-md-2">
+  <div class="col-md-3">
   </div>
 
-  <div class="col-md-8">
+  <div class="col-md-6">
 
+    <p>保険や車代などの比較的大きな出費から<br>
+    日用品や食品など様々なコスパの計算ができます。</p>
+    <h2>指定した条件の購入単価は？</h2>
+    <p style="color:red">カンマをいれず半角数字のみを入力してください</p>
+
+<!-- アプリの使い方説明 -->
     <details>
+
       <summary>
         このサイトの使い方の例を見る
       </summary>
-      <p class="textleft">(例)中古車を購入したいが製造後15年を超えたら買い替えを検討したい。<br>
-      100万円の車で3年落ちの車を12年後に買い替えする場合と<br>
-      80万円で5年落ちの車を10年後に買い替えした場合どちらがお得？</p>
+
+      <p class="textleft">(例)中古車を購入したいが、製造から15年を超えたら車を買い替えたい。<br>
+      ①総額100万円で3年落ちの車を購入し、12年後に買い替える場合<br>
+      ②総額80万円で5年落ちの車を購入し、10年後に買い替える場合<br>
+      1年あたりの購入単価を計算した場合、どちらがお得か比較したい</p>
+
       <details>
-        <summary>
+        <summary class="textleft">
           商品1の入力手順
         </summary>
-        <p class="bottomspace textleft">
-          1.左の枠へ100を入力し単位は万円を選択する<br>
-          2.真ん中の枠へ15を入力し年を選択する<br>
-          3.右側の枠へ3を入力し年を選択する<br>
-        </p>
+        <ol class="bottomspace textleft">
+          <li>左の枠へ【100】を入力し単位は【万円】を選択する</li>
+          <li>真ん中の枠へ【15】を入力し単位は【年】を選択する</li>
+          <li>右側の枠へ【3】を入力し単位は【年】を選択する</li>
+        </ol>
       </details>
 
       <details>
-        <summary>
+        <summary class="textleft">
           商品2の入力手順
         </summary>
-        <p class="textleft">
-          1.左の枠へ80を入力し単位は万円を選択する<br>
-          2.真ん中の枠へ15を入力し年を選択する<br>
-          3.右側の枠へ5を入力し年を選択する<br>
-          4.計算ボタンをクリックすると結果が表示されます。
-        </p>
+        <ol class="textleft">
+          <li>左の枠へ【80】を入力し単位は【万円】を選択する</li>
+          <li>真ん中の枠へ【15】を入力し単位は【年】を選択する</li>
+          <li>右側の枠へ【5】を入力し単位は【年】を選択する</li>
+          <li>【計算する】をクリックすると結果が表示されます</li>
+        </ol>
       </details>
 
     </details>
 
+  </div>  <!-- <div class="col-md-6"> -->
+
+  <div class="col-md-3">
   </div>
 
-  <div class="col-md-2">
-  </div>
-
-</div>  <div class="row"> -->
+</div>  <div class="row">
 
 
 <form method="POST" action="calculation.php">
