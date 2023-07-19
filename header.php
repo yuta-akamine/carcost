@@ -20,8 +20,8 @@
     <div class ="container">
 
       <header>
-        <a href="index.php" class="iconlink">
-          <i class="fa-solid fa-calculator fa-2x rightspace"></i>
+        <a href="index.php" class="iconlink rightspace">
+          <i class="fa-solid fa-calculator fa-2x"></i>
         </a>
         <h1>コスパ計算サイト</h1>
       </header>
